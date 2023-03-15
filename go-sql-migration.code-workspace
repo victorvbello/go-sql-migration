@@ -1,0 +1,37 @@
+{
+	"folders": [
+	  {
+		"path": "."
+	  }
+	],
+	"settings": {
+	  "window.title": "${rootName}${separator}${activeEditorShort}",
+	  "files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"vendor": true
+	  },
+	  "workbench.colorCustomizations": {
+		"statusBar.background": "#ce0a0a",
+		"statusBar.foreground": "#ffffff"
+	  },
+	  "dateTime.showDayOfMonth": true,
+	  "dateTime.showDayOfWeek": true,
+	  "dateTime.showMonth": true,
+	  "dateTime.padDays": true,
+	  "cSpell.language": "en,es",
+	  "cSpell.words": [
+		"Preparex"
+	  ],
+	  "go.formatTool": "goimports",
+	  "go.toolsEnvVars": {
+		"GOFLAGS": "-mod=vendor"
+	  },
+	  "[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	  }
+	}
+  }
