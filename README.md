@@ -1,3 +1,5 @@
+This is basic mysql migration using go `1.17.8`, default name of migration table is `migration_db_version`
+
 ## DB
 Only for MySQL driver, using connection string like `user01:password01@tcp(localhost:3306)/mydatabase?parseTime=true`
 
@@ -15,17 +17,17 @@ go run . up -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true"
 **UpTo**
 > Run this to execute action up of specific version
 ```sh
-go run . up-to -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true" -version "20230314185040" 
+go run . up-to -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true" -version "20230314185040"
 ```
 **Down**
 > Run this to execute action down of all migration files
 ```sh
-go run . down -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true"  
+go run . down -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true"
 ```
 **DownTo**
 > Run this to execute action down of all migration files with the version major
 ```sh
-go run . down-to -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true" -version "20230314193200" 
+go run . down-to -conn "user:pass@tcp(127.0.0.1:3306)/test?parseTime=true" -version "20230314193200"
 ```
 
 ## Using this guide
